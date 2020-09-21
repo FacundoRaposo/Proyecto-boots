@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    font-family: "roboto";
+}
+
+.Title{
+    font-family: "josefin sans", sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.navbar-brand img {
+    height: 3rem;
+    text-align: left;
+}
+
+body{
+    min-height:100%;
+    position: relative;
+}
+
+.bg{
+    background-image: url("https://scontent.faep9-1.fna.fbcdn.net/v/t1.0-9/45128880_1872654406184317_6759918189032767488_o.jpg?_nc_cat=109&_nc_sid=cdbe9c&_nc_eui2=AeF3BzldfOBS4U-0bzZpKz9VQPusWG2M8VFA-6xYbYzxUUmtJcmzlyT0W9U8lbPQXpc&_nc_ohc=qkAZjbJqf00AX8SBOef&_nc_ht=scontent.faep9-1.fna&oh=57c2182ca5023d5022e697da699f9094&oe=5F87BE30");
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+
+#frases {
+    text-transform: uppercase;
+    padding: 2vh;
+    align-items: center;
+    width: 70%;
+    opacity: 0;
+    margin-left: 15%;
+    color: black;
+    font-size: 3vh;
+    text-align: center;
+    position: relative;
+    animation: switch 22s linear infinite;
+    animation-name: slide;
+}
+
+#frases span {
+    display: block;
+    font-size: .4em;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+        transform: scale(1.35)
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1)
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+/* Pagina Contacto */
+
+#contacto{
+    align-content: center;
+    height: 800px;
+    margin-top: 4vh;
+}
+.card-body {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/* Pagina Nosotros */
+
+#nosotros p{
+	text-align: left;
+    text-justify: auto;
+}
+
+footer{
+    bottom: 0;
+    text-align: center;
+}
+.social-media i{
+	font-size: 3rem;
+    color: dimgrey;
+}
